@@ -1,0 +1,58 @@
+{
+    "pages": [
+        "pages/index/index"
+    ],
+    "subPackages": [
+        {
+            "root": "subpackage",
+            "pages": [
+                "pages/index/index"
+            ]
+        }
+    ],
+    "window": {
+        "navigationBarTitleText": "Demo",
+        "navigationBarBackgroundColor": "#000000",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "default",
+        "backgroundColor": "#ffffff",
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": "true",
+        "onReachBottomDistance":"50"
+    },
+    "preloadRule": 
+    {
+       "pages/index": {
+            "network": "all",
+            "packages": ["subpackage"]
+        }
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "component/component",
+                "text": "首页",
+                "iconPath":"/images/API_normal.png",
+                "selectedIconPath":"/images/API_selected.png"
+	        },
+            {
+                "pagePath": "api/api",
+                "text": "详情",
+                "iconPath":"/images/component_normal.png",
+                "selectedIconPath":"/images/component_selected.png"
+            }
+        ],
+        "backgroundColor" : "#ffffff",
+        "borderStyle": "white",
+        "color": "#000",
+        "selectedColor": "#6495ED"
+    },
+    "requiredBackgroundModes": ["audio"],
+    "prefetches": ["https://m.baidu.com", "https://m.baidu.com?query=${query}"],
+    "networkTimeout": {
+        "request": 30000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    }
+}

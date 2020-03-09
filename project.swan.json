@@ -1,0 +1,42 @@
+{
+    "compilation-args": {
+        "common": {},
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/index/index",
+                    "query": "",
+                    "scene": {},
+                    "isUpdate": false
+                },
+                "id": 0,
+                "text": "pages/index/index"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/index/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 1,
+                "text": "pages/index/index"
+            }
+        ],
+        "selected": 0
+    },
+    "host": "baiduboxapp",
+    "projectname": "demo1",
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.10.4",
+            "swanJsVersion": "3.150.255-rc"
+        }
+    }
+}
